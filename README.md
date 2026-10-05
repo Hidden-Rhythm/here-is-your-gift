@@ -16,9 +16,13 @@
 </p>
 
 <p>
-  <a href="https://github.com/Hidden-Rhythm/here-is-your-gift">
-    <img src="https://img.shields.io/badge/View%20Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Source">
+  <a href="https://here-is-your-gift.vercel.app">
+    <img src="https://img.shields.io/badge/🌐%20Open%20Website-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Open Website">
   </a>
+</p>
+
+<p>
+  <a href="https://github.com/Hidden-Rhythm/here-is-your-gift">💻 Source Code</a>
 </p>
 
 </div>
@@ -29,7 +33,7 @@
 
 **Here Is Your Gift** is a small interactive birthday surprise built as a playful web experience.
 
-Instead of simply displaying a birthday message, the page turns the gift into a little journey — starting with a click, followed by animated messages, playful interactions, a countdown, stickers, music, and falling hearts.
+Instead of simply showing a birthday message, the page turns the gift into a tiny journey — with animated messages, music, playful interactions, stickers, a countdown, and a final surprise.
 
 > **Sometimes the best gifts aren't wrapped. They're coded.**
 
@@ -37,35 +41,35 @@ Instead of simply displaying a birthday message, the page turns the gift into a 
 
 ## ✨ Experience
 
-| Feature                | Description                                                 |
-| ---------------------- | ----------------------------------------------------------- |
-| 🎁 Interactive Intro   | Opens the experience with a simple "Click here" interaction |
-| 💬 Animated Messages   | Personalized messages appear progressively                  |
-| ⌨️ Typewriter Effect   | Text is revealed with a smooth typing animation             |
-| 🎵 Background Music    | Includes a local audio track from the `assets` folder       |
-| 🖼️ Animated Stickers  | Multiple GIF reactions throughout the experience            |
-| 💗 Falling Hearts      | Hearts appear dynamically during the final sequence         |
-| 🫣 Playful Buttons     | Interactive Yes / No flow with animated behavior            |
-| ✨ Click Effects        | Small visual effects follow user interactions               |
-| 🌌 Animated Background | Full-screen background with blur and motion effects         |
-| 📱 Responsive          | Designed to work across desktop and mobile screens          |
+| Feature                | Description                                    |
+| ---------------------- | ---------------------------------------------- |
+| 🎁 Interactive Intro   | Opens the experience with a simple interaction |
+| 💬 Animated Messages   | Personalized messages appear progressively     |
+| ⌨️ Typewriter Effect   | Smooth animated text using TypeIt              |
+| 🎵 Background Music    | Local audio for the experience                 |
+| 🖼️ Animated Stickers  | GIF reactions throughout the journey           |
+| 💗 Falling Hearts      | Dynamic hearts during the final sequence       |
+| 🫣 Playful Buttons     | Interactive Yes / No flow                      |
+| ✨ Click Effects        | Small visual effects on interaction            |
+| 🌌 Animated Background | Full-screen animated visual atmosphere         |
+| 📱 Responsive          | Works across desktop and mobile                |
 
 ---
 
 ## 🛠️ Built With
 
-* **HTML5** — page structure
-* **CSS3** — animations, effects & responsive styling
-* **Vanilla JavaScript** — interaction logic
-* **Swiper.js** — interactive presentation framework
-* **SweetAlert2** — popup interactions
-* **TypeIt** — typewriter text animation
-* **ScrollReveal** — animation utilities
-* **Google Fonts** — custom typography
+* **HTML5**
+* **CSS3**
+* **Vanilla JavaScript**
+* **Swiper.js**
+* **SweetAlert2**
+* **TypeIt**
+* **ScrollReveal**
+* **Google Fonts**
 
-No framework.
 No backend.
 No database.
+No framework.
 
 Just a little HTML, CSS, JavaScript — and a reason to build it. ❤️
 
@@ -83,7 +87,8 @@ here-is-your-gift/
 │   ├── cubit.gif
 │   ├── terlope.gif
 │   ├── ledekin.gif
-│   └── gemoy.gif
+│   ├── gemoy.gif
+│   └── ledekin (1).gif
 │
 └── index.html
 ```
@@ -92,16 +97,67 @@ Everything required for the experience lives inside the repository.
 
 ---
 
+## 🎀 The Flow
+
+```text
+              OPEN
+                │
+                ▼
+        ┌───────────────┐
+        │ Birthday Intro│
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │  Gift Prompt  │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ Playful Timer │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ Final Surprise│
+        └───────┬───────┘
+                │
+                ▼
+           💗 ✨ 🎁 ✨ 💗
+```
+
+---
+
+## 🎨 Personalization
+
+Most of the experience can be customized directly from `index.html`.
+
+You can change:
+
+* 💬 Messages
+* 🎵 Music
+* 🖼️ Background
+* 🎞️ GIFs
+* 🎨 Colors
+* ✨ Animations
+* 🔘 Button behavior
+* ⏱️ Timing
+* 💗 Final interactions
+
+Simply replace the assets and update their references inside the HTML.
+
+---
+
 ## 🚀 Run Locally
 
 No build system is required.
 
 ```bash
-git clone https://github.com/Hidden-Rhythm/here-is-your-gift.git
+git clone <repository-url>
 cd here-is-your-gift
 ```
 
-Then simply open:
+Then open:
 
 ```text
 index.html
@@ -109,73 +165,21 @@ index.html
 
 in your browser.
 
-For the best experience, use a local server such as **VS Code Live Server**.
+For the best experience, use **VS Code Live Server** or another local static server.
 
 ---
 
-## 🎨 How It Works
+## 🌐 Live
 
-The experience follows a simple interactive sequence:
+<div align="center">
 
-```text
-        ┌───────────────┐
-        │   Open Gift   │
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Birthday Intro│
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │  Gift Prompt  │
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Playful Timer │
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Final Surprise│
-        └───────┬───────┘
-                ↓
-          💗 ✨ 🎁 ✨ 💗
-```
+### ✨ Experience the surprise
 
----
+<a href="https://here-is-your-gift.vercel.app">
+  <img src="https://img.shields.io/badge/OPEN%20WEBSITE-Here%20Is%20Your%20Gift-black?style=for-the-badge" alt="Open Website">
+</a>
 
-## 🧩 Personalization
-
-The experience can be customized directly from `index.html`.
-
-You can change:
-
-* 💬 Messages
-* 🎵 Background music
-* 🖼️ Background image
-* 🎞️ GIF stickers
-* 🎨 Colors
-* ✨ Animations
-* 🔘 Button behavior
-* ⏱️ Timing
-* 💗 Final interactions
-
-Replace the files inside `assets/` and update the corresponding references in `index.html`.
-
----
-
-## 🌐 Deployment
-
-Because this is a static project, it can be deployed on practically any static hosting platform.
-
-Works well with:
-
-* GitHub Pages
-* Vercel
-* Netlify
-* Cloudflare Pages
-* Any standard web server
-
-No server-side code is required.
+</div>
 
 ---
 
